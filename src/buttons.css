@@ -1,0 +1,152 @@
+:root, :root.researcher {
+  --primary: #2CA983;
+  --dark: #238769;
+  --secondary-usual: #EAF6F3;
+  --secondary-hover: #E4F2EE;
+  --light: #F8F9F8;
+}
+/* респ. */
+:root.respondent {
+  --primary: #2568DB;
+  --dark: #1E53AF;
+  --secondary-usual: #E9F0FB;
+  --secondary-hover: #C2D5F5;
+  --light: #F2F7FF;
+}
+/* общее */
+:root {
+  --contrast-dark: #E28800;
+  --contrast-primary: #FA9600;
+  --contrast-secondary: #FFF6E8;
+
+  --warning-dark: #AF1E38;
+  --warning-primary: #DB2546;
+  --warning-secondary: #F8D3DA;
+
+  --divider: #F2F0F0;
+  --background: #F7F7F7;
+  --light-text: #ABACAF;
+  --dark-text: #787878;
+  --white: #FFFFFF;
+  --black: #1B1B1B;
+  --twenty-percent: #CCCCCC;
+  --20-percent: #CCCCCC;
+
+/* Colors */
+  --primary-color: #2CA983;
+  --contrast-dark-color: #E28800;
+  --contrast-primary-color: #FA9600;
+  --contrast-secondary-color: #FEEACC;
+  --warning-dark-color: #AF1E38;
+  --warning-primary-color: #DB2546;
+  --warning-secondary-color: #F8D3DA;
+  --super-light-color: #F8F9F8;
+  --secondary-hover-color: #E4F2EE;
+  --secondary-usual-color: #EAF6F3;
+  --secondary--table-color: #F2F8F6;
+  --dark-main-color:#182F43;
+
+  --background-color: #F7F7F7;
+  --white-color: #FFFFFF;
+  --divider-color: #F2F0F0;
+  --black-color: #1B1B1B;
+  --gray-color: #CCCCCC;
+
+  --light-text-color: #ABACAF;
+  --dark-text-color: #787878;
+
+  /* Font and typography */
+  --body-font: 'Open Sans', Arial;
+  --super-header-font-size: 32px;
+  --header-font-size: 23px;
+  --subheader-font-size: 19px;
+  --normal-body-font-size: 16px;
+  --small-body-font-size: 14px;
+
+  /* Font Weight */
+  --bigest-font-weight: 800;
+  --semi-bold-font-weight: 600;
+  --regular-font-weight: 400;
+  --light-font-weight: 300;
+  
+  /* Shadows */
+  --normal-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 2px 6px 2px rgba(0, 0, 0, 0.05);
+}
+
+button, .button {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  line-height: 24px;
+  transition: background-color 300ms ease-in-out;
+  font-size: var(--normal-body-font-size);
+  font-family: var(--body-font);
+}
+button:disabled {
+  background-color: var(--divider);
+  color: var(--light-text);
+  cursor: default;
+}
+
+button.primary, .button.primary {
+  font-weight: var(--regular-font-weight);
+  color: var(--white-color);
+  background-color: var(--primary);
+  cursor: pointer;
+  position: relative;
+}
+button.primary:hover, .button.primary:hover {
+  transition: background-color 300ms ease-in-out;
+  background-color:var(--dark);
+}
+button.primary:disabled, .button.primary:disabled {
+background-color: var(--background);
+color: var(--light-text);
+cursor: auto;
+}
+
+button.secondary, .button.secondary {
+  font-weight: var(--semi-bold-font-weight);
+  color: var(--dark);
+  background-color: var(--light);
+}
+button.secondary:hover, .button.secondary:hover {
+  background-color: var(--secondary-usual);
+  transition: background-color 300ms ease-in-out;
+}
+button.secondary:disabled, .button.secondary:disabled {
+  background-color: var(--background);
+  color: var(--light-text);
+  cursor: auto;
+}
+
+button.text, .button.text {
+  font-weight: var(--regular-font-weight);
+  color: var(--primary);
+  background-color: transparent;
+  width: max-content;
+}
+button.text:hover, .button.text:hover {
+  background-color: var(--secondary-usual);
+  transition: background-color 300ms ease-in-out;
+}
+html.respondent button.text:hover,
+html.respondent .button.text:hover {
+  background-color: var(--light);
+}
+button.text:disabled, .button.text:disabled {
+    color: var(--light-text);
+    cursor: auto;
+}
+button svg.left {
+  margin-right: 10px;
+}
+button svg.right {
+  margin-left: 10px;
+}
